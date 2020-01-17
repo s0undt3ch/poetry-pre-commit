@@ -1,0 +1,23 @@
+---
+-   id: poetry-lock
+    name: poetry-lock
+    entry: poetry lock
+    language: python
+    language_version: python3
+    args: []
+    files: 'pyproject.toml'
+    require_serial: true
+    pass_filenames: false
+    additional_dependencies: []
+    minimum_pre_commit_version: 0.14.0
+-   id: poetry-export
+    name: poetry-export
+    entry: poetry export -f requirements.txt -o
+    language: python
+    language_version: python3
+    args: []
+    files: 'poetry.lock'
+    require_serial: true
+    pass_filenames: false
+    additional_dependencies: []
+    minimum_pre_commit_version: 0.14.0
